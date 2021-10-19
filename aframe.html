@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 02/07/18 21:52. Alexandre Elisé. Tous droits réservés.
+  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3d Logo | A-Frame | Alex AR</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <a-asset-item id="logo-obj" src="logo-alexpro-seperate-mesh-3d.obj"></a-asset-item>
+        <a-asset-item id="logo-mtl" src="logo-alexpro-seperate-mesh-3d.mtl"></a-asset-item>
+    </a-assets>
+    <a-box position="0 0 0" rotation="45 45 0" scale="0.3 0.3 0.3" color="silver" opacity="0.3">
+            <a-animation attribute="rotation" from="45 45 0" to="405 405 0" dur="7000" easing='linear' repeat="indefinite" direction="alternate"></a-animation>
+    </a-box>
+    <a-entity id="logo" obj-model="obj: #logo-obj; mtl: #logo-mtl" position="0 0 0" rotation="0 0 0" scale="1 1 1">
+            <a-animation attribute="rotation" from="0 0 0" to="0 360 0" dur="3000" easing='linear' repeat="indefinite" direction="alternateReverse"></a-animation>
+    </a-entity>
+            <a-sky color="#FCFCFC"></a-sky>
+
+    <a-entity camera look-controls wasd-controls position="0 0 0.5">
+            <a-cursor id="cursor" color="#333333" position="0 0 0.5"></a-cursor>
+            <a-entity id="leftHand" hand-controls="left"></a-entity>
+            <a-entity id="rightHand" hand-controls="right"></a-entity>
+    </a-entity>
+</a-scene>
+</body>
+</html>
