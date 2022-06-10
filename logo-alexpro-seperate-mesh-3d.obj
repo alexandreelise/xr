@@ -1,6 +1,6 @@
 # Blender v2.93.5 OBJ File: 'logo-alexpro-seperate-mesh-3d.blend'
 # www.blender.org
-mtllib logo-alexpro-seperate-mesh-3d.mtl
+mtllib https://raw.githubusercontent.com/alexandreelise/xr/b0885f204a177c2c34dd8bfa9c5bfc9ce3cc542b/logo-alexpro-seperate-mesh-3d.mtl
 o Curve.3_CUCurve.020
 v 0.060390 0.015572 0.006309
 v 0.073002 -0.014533 0.006309
